@@ -1,67 +1,71 @@
 # ClassTracker - Backend
 
-Backend API for the ClassTracker application, built using Python and FastAPI.
+Backend application for ClassTracker, built using Node.js to handle API requests, application logic, and PostgreSQL database operations.
 
 ## Tech Stack
-- Python
-- FastAPI
+- Node.js
+- Express.js (if used)
 - PostgreSQL
-- SQLAlchemy (if used)
-- Uvicorn
+- JavaScript
+- npm
 
 ## Features
-- REST API endpoints
-- Student and class management
-- Database integration
-- Backend business logic
-- API validation
+- REST API development
+- Student management
+- Class management
+- PostgreSQL database integration
+- Application business logic
+- Frontend API communication
 
 ## Installation
 
 Clone the repository:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone YOUR_BACKEND_REPOSITORY_URL
 ```
 
-Navigate to the backend folder:
+Navigate to the project directory:
 
 ```bash
 cd ClassTracker-backend
 ```
 
-Create virtual environment:
-
-```bash
-python -m venv venv
-```
-
-Activate on Windows:
-
-```bash
-venv\Scripts\activate
-```
-
 Install dependencies:
 
 ```bash
-pip install -r requirements.txt
-```
-
-Run the application:
-
-```bash
-uvicorn main:app --reload
-```
-
-API documentation:
-
-```text
-http://127.0.0.1:8000/docs
+npm install
 ```
 
 ## Environment Variables
 
-Create a `.env` file containing the required database connection and application configuration.
+Create a `.env` file in the project root and configure the required variables.
 
-Never commit secrets or credentials to GitHub.
+Example:
+
+```env
+PORT=5000
+DATABASE_URL=your_postgresql_connection_string
+```
+
+Use your actual application's environment variable names. Never commit `.env` or database passwords to GitHub.
+
+## Run the Application
+
+```bash
+npm start
+```
+
+For development (if nodemon is configured):
+
+```bash
+npm run dev
+```
+
+## Deployment
+
+The backend will be deployed on a separate AWS EC2 instance.
+
+## Author
+
+ClassTracker Development Team
